@@ -48,8 +48,7 @@ table, tr, th, td{
 }
 
 #programming_cat{
-    float: right;
-    height: 150px;
     width: 150px;
-    margin-right: 500px;
+    height: auto;
+    max-width: 100%;
 }

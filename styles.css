@@ -2,23 +2,22 @@ body{
     font-family: "Calibri";
 }
 
-@keyframes shadow{
-    from {text-shadow: 0px}
-    to {text-shadow: 3px}
-}
-
 a{
-    text-shadow: 0px;
+    text-shadow: 0px 0px black;
     margin: 2px;
     text-decoration: none;
     color: black;
     font-size: 20px;
+    transition: text-shadow 0.4s;
 }
 
 a:hover{
     background-color: white;
-    animation-name: shadow;
-    animation-duration: 2s;
+    text-shadow: 1.5px 1.5px grey;
+}
+
+a:active{
+    background-color: grey;
 }
 
 h1{
@@ -30,21 +29,27 @@ h1{
 
 h2{
     border-radius: 2px;
-    border: 2px solid black;
+    border-bottom: 4px solid black;
     width: fit-content;
-    background-color: grey;
-}
-
-.info{
-    margin-left: 25px;
 }
 
 table, tr, th, td{
-    padding: 3px;
     border: 2px solid black;
     border-collapse: collapse;
+    padding: 2px;
 }
 
 .nav{
     background-color: grey;
+}
+
+.info{
+    max-width: 800px;
+}
+
+#programming_cat{
+    float: right;
+    height: 150px;
+    width: 150px;
+    margin-right: 500px;
 }

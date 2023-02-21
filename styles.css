@@ -11,13 +11,9 @@ a{
     transition: text-shadow 0.4s;
 }
 
-a:hover{
+.top-nav:hover{
     background-color: white;
     text-shadow: 1.5px 1.5px grey;
-}
-
-a:active{
-    background-color: grey;
 }
 
 h1{
@@ -59,14 +55,19 @@ table, tr, th, td{
     max-width: 100%;
 }
 
-nav{
-    border: 2px solid black;
-    width: 300px;
-}
-
 .nav-box{
     display: block;
     width: fit-content;
     border: 2px solid black;
     border-radius: 4px;
+    transition: transform 1s;
 }
+
+.nav-box:active{
+    transform: translateY(5px);
+}
+
+#message{
+    height: 100px;
+}
+
